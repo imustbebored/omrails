@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "1.9.3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -14,7 +14,7 @@ group :development, :test do
 end
 
 
-# Use SCSS for stylesheets
+# Use SCSS for stylesheetsruby "1.9.3"
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
