@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "1.9.3"
+ruby "2.0.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -13,7 +13,8 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
-
+#Avoid plugin injections
+gem 'rails_12factor'
 # Use SCSS for stylesheetsruby "1.9.3"
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
