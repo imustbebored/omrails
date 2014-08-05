@@ -13,9 +13,6 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
-group :production do
-	gem 'rails_12factor'
-end
 #Avoid plugin injections
 
 # Use SCSS for stylesheetsruby "1.9.3"
