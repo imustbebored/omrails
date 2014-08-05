@@ -21,3 +21,7 @@ module Omrails
     # config.i18n.default_locale = :de
   end
 end
+
+ config.assets.precompile += [
+'styles.css.scss'
+]
