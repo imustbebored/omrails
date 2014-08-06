@@ -1,10 +1,17 @@
-<div class="jumbotron">
-		<h1>Welcome to One Month Rails!</h1>
+ <% if user_signed_in? %>
+ <div class="jumbotron" style="text-align:center">
+<h1>You are logged in.<h1>
+	<p>Well hello there you sexy beast!</p>
+</div>
+<% else %>
+<div class="jumbotron" style="text-align:center">
+		<h1>Welcome to the coolest place on EARTH!</h1>
 		<p>
-	You've found the home page for the One Month Rails Application.
+	You are sooo lucky to be here right now.
 
 		</p>
 		<p>
-			</button><%= link_to "Sign Up Now", "#", class: "btn btn-primary btn-large" %>
+			<%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-primary btn-large" %>
 		</p>
 </div>
+<% end %>

@@ -3,8 +3,7 @@ ruby "2.0.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
-# Use sqlite3 as the database for Active Record
-
+gem 'devise'
 group :production do
 	gem 'pg'
 end
@@ -16,7 +15,8 @@ end
 #Avoid plugin injections
 
 # Use SCSS for stylesheetsruby "1.9.3"
-gem 'sass-rails', '~> 4.0.3'
+gem 'simple_form', '~> 3.0.2'
+gem 'sass-rails', '>= 3.2'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 # Use Uglifier as compressor for JavaScript assets
