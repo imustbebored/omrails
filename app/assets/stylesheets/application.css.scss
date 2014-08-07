@@ -12,7 +12,7 @@ font-family: Raleway, verdana;
 @import 'bootstrap';
 
 body{
-	padding-top:60px;
+	padding-top:90px;
 }
 
 @import "bootstrap-sprockets";
@@ -111,8 +111,9 @@ label.password{
 	font-family:Raleway;
 	padding-left:9px;
 }
-.navbar-right{
+li{
 	border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
 }
 #user_password_confirmation{
 	background-color: #fff;
@@ -202,5 +203,31 @@ width:66.6667%;
 }
 .well{
     text-align: center;
-    width:75%;
+}
+
+.box{
+    margin: 5px;
+    padding: 5px;
+    font-size: 11px;
+    line-height: 1.4em;
+    float: left;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #444;
+    width: 214px;
+}
+
+.box img{
+    display:block;
+    width:100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.description{
+    margin:10px 0 5px;
+}
+.jumbo{
+    color: green!important;
 }
