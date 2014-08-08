@@ -20,7 +20,7 @@ Rails.application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -82,5 +82,6 @@ Rails.application.configure do
 
   # In production, :host should be set to the actual host of your application.
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
-    config.assets.precompile += ['application.css.scss']
+  
+  config.assets.precompile += ['application.css.scss']
 end
