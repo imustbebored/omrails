@@ -82,4 +82,14 @@ Rails.application.configure do
 
   # In production, :host should be set to the actual host of your application.
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
+
+  #Paperclip should use Amazon S3 on Heroku
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => "jomrails",
+    :access_key_id => "AKIAI3FWYHO2IQHU2YCQ",
+    :secret_access_key => "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"
+  }
+}
 end
